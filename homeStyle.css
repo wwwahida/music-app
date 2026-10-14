@@ -11,12 +11,32 @@ body {
 .music-player {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   height: 140px;
   background-color: #38b9b9;
   border: 3px solid black;
   padding: 5px 15px 5px 0;
+}
+
+.album {
+  flex-shrink: 0;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.play-icon {
+  margin-left: auto;
+  font-size: 40px;
+}
+
+.profile {
+  margin-left: 20px;
 }
 
 .album {
@@ -32,12 +52,35 @@ body {
   height: 125px;
   object-fit: cover;
   display: block;
+  
+}
+
+
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.song-info p {
+  margin: 0;
 }
 
 .playing-text {
   font-size: 25px;
-  margin: 0;
 }
+
+.album-title {
+  font-size: 20px;
+}
+
+.artist-name {
+  font-size: 18px;
+}
+
 
 .play-icon {
   font-size: 40px;
@@ -50,4 +93,71 @@ body {
   color: black;
   cursor: pointer;
 }
+
+
+
+/* Search bar  */
+
+.form-field{
+  text-align: center;
+}
+
+.form-ghost{
+  width: 90%;
+}
+
+.container{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+/* Footer */
+
+
+.music-nav {
+  max-width: 100%;
+  margin: 36px auto;
+  padding: 0;
+}
+
+.music-nav .row {
+  border: 2px solid #111;
+}
+
+.nav-item {
+  background-color: #3cbdbb;
+  border-right: 2px solid #111;
+  height: 86px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+.nav-item a {
+  color: #111;
+  text-decoration: none;
+  font-size: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item a:hover {
+  background-color: #2eaaa8;
+}
+
+.nav-item a:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: -5px;
+}
+
 
