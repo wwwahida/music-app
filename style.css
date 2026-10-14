@@ -3,6 +3,66 @@
     color: white;
 }
 
+@media (max-width: 430px) {
+    .currently-playing {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: right;
+}
+
+.tick-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.queue-icon {
+    width: 60px;
+}
+
+.collapse-up-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #161616;
+    top: 1px;
+    right: 2px;
+    position: absolute;
+}
+
+.tick-icon, .queue-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .currently-playing, .lyrics {
     display: flex;
     flex-direction: column;
